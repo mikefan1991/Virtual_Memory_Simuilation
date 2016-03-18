@@ -1,0 +1,5 @@
+This program contains two code file and a Makefile.
+The vm.h file declares three classes for TLB, page table and physical memory. And the implementations of functions are under the declaration.
+The vm.cpp file reads virtual addresses from a file and finds the corresponding value in the physical memory for those virtual addresses. It firstly reads an address, resolve it. Then it uses the virtual page number to find the physical page number in TLB and page table. After it gets the physical page number, the value is in that index of physical memory. If there are some page faults, the program will get 256 values from .bin file.
+
+The addresses.txt file is for the original and modifications. Because I wrote the program with 128 entries of physical memory, to test the original statistics, you can modify all the numbers that are 128 to 256 in the PM class and its functions, which are in the vm.h file. The addresses2.txt file is for the additional functionality. 
